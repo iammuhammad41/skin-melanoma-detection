@@ -2,7 +2,7 @@
 
 A PyTorch implementation of binary classification for melanoma detection using a custom AlexNet model and 10‑fold cross-validation.
 
----
+
 
 ## Table of Contents
 
@@ -16,13 +16,13 @@ A PyTorch implementation of binary classification for melanoma detection using a
 * [Results](#results)
 * [License](#license)
 
----
+
 
 ## Overview
 
 This project trains an AlexNet-inspired convolutional neural network to classify dermoscopic images into two classes: **melanoma** vs. **non-melanoma**. We use standard image transforms, 10‑fold cross-validation, and report accuracy, confusion matrix, and F1 score on a held‑out test set.
 
----
+
 
 ## Dataset
 
@@ -43,7 +43,7 @@ We leverage the “Melanoma Skin Cancer Dataset” containing 10 000 dermoscop
   * `0`: benign
   * `1`: melanoma
 
----
+
 
 ## Installation
 
@@ -61,7 +61,7 @@ We leverage the “Melanoma Skin Cancer Dataset” containing 10 000 dermoscop
    pip install torch torchvision scikit-learn matplotlib tqdm
    ```
 
----
+
 
 ## Usage
 
@@ -93,7 +93,7 @@ We leverage the “Melanoma Skin Cancer Dataset” containing 10 000 dermoscop
    * Confusion matrix
    * F1 score for the melanoma class
 
----
+
 
 ## Model Architecture
 
@@ -131,7 +131,7 @@ class AlexNet(nn.Module):
 * **Input**: 3 × 227 × 227
 * **Output**: logits for 2 classes
 
----
+
 
 ## Training Procedure
 
@@ -154,7 +154,7 @@ class AlexNet(nn.Module):
   ```
 * **Device**: GPU if available
 
----
+
 
 ## Evaluation
 
@@ -174,7 +174,6 @@ Confusion Matrix:
 F1 Score (melanoma): 0.921
 ```
 
----
 
 ## Results
 
@@ -182,8 +181,3 @@ F1 Score (melanoma): 0.921
 * **Strong melanoma detection** performance with F1 ≈ 0.92
 * **Balanced classification** between benign and malignant
 
----
-
-## License
-
-This project is released under the MIT License. Feel free to reuse and modify for research or personal projects.
